@@ -33,24 +33,55 @@ The integration by the original qtrap() sometimes converged incorrectly
 to zero when the Monte Carlo data was noisy.
 
 ======================================================================
+
 Lihong Wang, Ph.D.
-Associate Professor
-Biomedical Engineering Program
-234C Zachry Engineering Center
-Texas A&M University
-College Station, TX 77843-3120
-Tel:	979-847-9040
-Fax:	979-845-4450
-Email:	LWang@tamu.edu
-URL:	http://oilab.tamu.edu
+
+Bren Professor of Medical Engineering and Electrical Engineering
+
+Affiliated Faculty of Physics and Applied Physics
+
+Andrew and Peggy Cherng Medical Engineering Leadership Chair
+
+Executive Officer (aka Department Chair) of Medical Engineering
+
+Andrew and Peggy Cherng Department of Medical Engineering
+
+Department of Electrical Engineering
+
+Division of Engineering and Applied Science
+
+California Institute of Technology
+
+1200 E. California Blvd., MC 138-78
+
+Pasadena, CA 91125
+
+Office: 205 Keck Labs (via 207)
+
+Work: 626-395-1959
+
+Fax: 626-395-1347
+
+Email: LVW@Caltech.edu
+
+Web: http://COILab.Caltech.edu
 
 Steven L. Jacques, Ph.D.
+
 Professor
+
 Oregon Medical Laser Center
+
 Providence/St. Vincent Hospital
+
 9205 SW Barnes Rd.
+
 Portland, OR 97225
+
 Tel:	503-216-4092
+
 Fax:	503-291-2422
+
 Email:	sjacques@ece.ogi.edu
+
 URL:	http://omlc.ogi.edu/staff/jacques.html
