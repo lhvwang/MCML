@@ -35,7 +35,6 @@ to zero when the Monte Carlo data was noisy.
 ======================================================================
 
 Lihong Wang, Ph.D.
-
 Bren Professor of Medical Engineering and Electrical Engineering
 
 Affiliated Faculty of Physics and Applied Physics
