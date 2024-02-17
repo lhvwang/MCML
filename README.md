@@ -37,49 +37,28 @@ to zero when the Monte Carlo data was noisy.
 Lihong Wang, Ph.D.<br />
 Bren Professor of Medical Engineering and Electrical Engineering<br />
 Affiliated Faculty of Physics and Applied Physics<br />
+Andrew and Peggy Cherng Medical Engineering Leadership Chair<br />
+Executive Officer (aka Department Chair) of Medical Engineering<br />
+Andrew and Peggy Cherng Department of Medical Engineering<br />
+Department of Electrical Engineering<br />
+Division of Engineering and Applied Science<br />
+California Institute of Technology<br />
+1200 E. California Blvd., MC 138-78<br />
+Pasadena, CA 91125<br />
+Office: 205 Keck Labs (via 207)<br />
+Work: 626-395-1959<br />
+Fax: 626-395-1347<br />
+Email: LVW@Caltech.edu<br />
+Web: http://COILab.Caltech.edu<br />
 
-Andrew and Peggy Cherng Medical Engineering Leadership Chair
 
-Executive Officer (aka Department Chair) of Medical Engineering
-
-Andrew and Peggy Cherng Department of Medical Engineering
-
-Department of Electrical Engineering
-
-Division of Engineering and Applied Science
-
-California Institute of Technology
-
-1200 E. California Blvd., MC 138-78
-
-Pasadena, CA 91125
-
-Office: 205 Keck Labs (via 207)
-
-Work: 626-395-1959
-
-Fax: 626-395-1347
-
-Email: LVW@Caltech.edu
-
-Web: http://COILab.Caltech.edu
-
-Steven L. Jacques, Ph.D.
-
-Professor
-
-Oregon Medical Laser Center
-
-Providence/St. Vincent Hospital
-
-9205 SW Barnes Rd.
-
-Portland, OR 97225
-
-Tel:	503-216-4092
-
-Fax:	503-291-2422
-
-Email:	sjacques@ece.ogi.edu
-
-URL:	http://omlc.ogi.edu/staff/jacques.html
+Steven L. Jacques, Ph.D.<br />
+Professor<br />
+Oregon Medical Laser Center<br />
+Providence/St. Vincent Hospital<br />
+9205 SW Barnes Rd.<br />
+Portland, OR 97225<br />
+Tel:	503-216-4092<br />
+Fax:	503-291-2422<br />
+Email:	sjacques@ece.ogi.edu<br />
+URL:	http://omlc.ogi.edu/staff/jacques.html<br />
