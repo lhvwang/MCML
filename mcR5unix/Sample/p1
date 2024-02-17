@@ -1,0 +1,72 @@
+#  Paste 1D files (in 2 columns) together side by side.
+#  February 7, 1992.
+
+#  Check number of arguments.
+if ($#argv != 2) then
+  echo 'Usage: p1 "input_file(s)" output_fname'
+  exit(1)
+endif
+
+onintr catch		# Prepare to catch interrpts.
+
+set com = $0
+set infiles = $1:q
+set outfile = $2
+
+#  Check validity of arguments for outfile.
+if ( -e $outfile) then
+  if (! -w $outfile) then
+    echo $outfile not writable
+    exit(2)
+  endif
+
+  cp $outfile $outfile.bak # Backup existent files.
+endif 
+
+#  Setup temp files with the PID number.
+set outbuf = /tmp/$com:t.$$.outbuf	
+set buf1 = /tmp/$com:t.$$.buf1
+set buf2 = /tmp/$com:t.$$.buf2
+set cmp1 = /tmp/$com:t.$$.cmp1
+set cmp2 = /tmp/$com:t.$$.cmp2
+
+#  Run through each file, keep the results in $outbuf.
+foreach infile ($infiles)
+  if (! -r $infile) then
+    echo $infile not readable
+    exit(3)
+  endif
+
+  #  Delimit by tab.
+  awk -F" " '{print $1 "\t" $2}' $infile >! $buf1
+
+  if (! -e $outbuf) then
+    cut -f1 $buf1 >! $cmp1
+    cp $buf1 $outbuf
+  else
+    cut -f1 $buf1 >! $cmp2
+    diff $cmp1 $cmp2 > /dev/null
+
+    if ($status) then		
+      # 1st rows are not the same. Paste both columns.
+      paste $outbuf $buf1 >! $buf2; cp $buf2 $outbuf
+      cut -f1 $buf1 >! $cmp1
+    else			
+      # 1st rows are the same.  Paste only the 2nd column.
+      cut -f2 $buf1 >! $buf2
+      paste $outbuf $buf2 >! $buf1; cp $buf1 $outbuf
+    endif
+  endif
+
+end
+
+#  Copy $outbuf to $outfile
+if (! -e $outfile) then
+  cp $outbuf $outfile
+else
+  paste $outfile $outbuf >! $buf1; cp $buf1 $outfile
+endif
+
+catch:		# jump to here if interrupted
+  rm -f $outbuf  $buf1 $buf2 $cmp1  $cmp2
+  exit(1)
