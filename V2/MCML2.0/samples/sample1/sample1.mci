@@ -1,0 +1,80 @@
+################################################################################
+# Input file for Monte Carlo simulation MCML - Monte Carlo for Multi-Layers.
+# Anything in a line after "#" is ignored as comments.
+# Space lines are also ignored.
+# Lengths are in cm; and mua and mus are in 1/cm. Time is in ps.
+# Use 8-space tab stops.
+#
+# Data catagories: 
+#	Rd_r	Rd_a	Rd_ra	Rd_t	Rd_rt	Rd_at	Rd_rat
+#	Td_r	Td_a	Td_ra	Td_t	Td_rt	Td_at	Td_rat
+#	A_z	A_rz	A_t	A_zt	A_rzt
+####
+
+# Sample 1
+# Total diffuse reflectance and total transmittance
+#
+
+mcmli2.0					# file version
+
+# Specify media
+# name		n	mua	mus	g
+  air		1.0	0	0	0
+  matched	1.0	10	90	0.75
+  mismatched	1.5	10	90	0
+end #of media
+
+# Specify data for run 1
+sample1a.mco	A				# output filename, ASCII/Binary
+
+# geometry
+# medium	thickness
+  air						# top clear medium
+  matched	0.02
+  air						# bottom clear medium
+end #of layers
+
+# source
+pencil						# src type: pencil/isotropic
+0						# starting z position of source
+
+# grids
+0.1	0.1	0.1				# dz, dr, dt
+1	1	1	30			# nz, nr, nt, na
+
+# scored data catagories: 
+Rd_a
+
+# simulation control
+1000000	10:00					# no. of photons | time
+1E-4						# threshold weight
+1						# random number seed
+# end of run 1
+
+# Specify data for run 2
+sample1b.mco	A				# output filename, ASCII/Binary
+
+# geometry
+# medium	thickness
+  air						# top clear medium
+  mismatched	1E8
+  air						# bottom clear medium
+end #of layers
+
+# source
+pencil						# src type: pencil/isotropic
+0						# starting z position of source
+
+# grids
+2E-3	2E-3	0.1				# dz, dr, dt
+50	50	1	1			# nz, nr, nt, na
+
+# scored data catagories: 
+Rd_r A_z
+
+# simulation control
+100000	10:00					# no. of photons | time
+1E-4						# threshold weight
+1						# random number seed
+
+end #of all runs

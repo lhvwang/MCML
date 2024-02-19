@@ -1,0 +1,97 @@
+mcmloA2.0 	# Version number of the file format.
+
+####
+# Data categories include: 
+# InParam, RAT, 
+# Rd_r	Rd_a	Rd_ra	Rd_t	Rd_rt	Rd_at	Rd_rat
+# Td_r	Td_a	Td_ra	Td_t	Td_rt	Td_at	Td_rat
+# A_z	A_rz	A_t	A_zt	A_rzt
+####
+
+mcmli2.0 			# file version 
+
+# Specify media 
+#	name		n	mua	mus	g
+	air 		1	0	0	0
+	matched 		1	10	90	0.75
+	mismatched 	1.5	10	90	0
+end #of media
+
+# Specify data for run 1
+sample1a.mco 	A			# output file name, format.
+
+# 	medium 		thickness
+	air
+	matched 		0.02
+	air
+end #of layers
+
+pencil 					# src type: pencil/isotropic.
+0					# starting position of source.
+
+0.1	0.1	0.1			# dz, dr, dt.
+1	1	1	30		# nz, nr, nt, na.
+
+# This simulation will score the following catagories:
+Rd_a 	
+
+1000000  	0:7				# no. of photons | time
+0.0001					# threshold weight.
+1					# random number seed.
+end #of runs
+
+# status of the random number generator:
+     861564724      572999358     697947040     130415307     303738584
+      93886987       37932870     553244193     611765476     251451605
+     294933552       34453904     357591874     469763059     425328879
+     128643855      612517406      16000264     530526596     244090691
+     296231943      671091670     595101368     709195314     443542059
+     302454414      968685462     257346703     370360170      33655987
+     734444415      628699372     326725567     359884525     381862669
+     106632069      249354127     931250061     817090202     496231335
+     997882689      654663373     342093891     434762604     887077917
+     385207033      341755864     948635504     663795257     478696530
+     853648768      148399746     107858970     725984453     973505020
+            35             11
+
+RAT #Reflectance, absorption, transmittance.
+# Average 	Standard Err 	Rel Err
+0              				#Rsp: Specular reflectance.
+0              	0                0.00%	#Rb: Ballistic reflectance.
+0.0972139      	0.000234288      0.24%	#Rd: Diffuse reflectance.
+0.241819       	0.00018808       0.08%	#A:  Absorbed fraction.
+0.134936       	0.000341655      0.25%	#Tb: Ballistic transmittance.
+0.526031       	0.000366369      0.07%	#Td: Diffuse transmittance.
+
+Rd_a #Rd[0], [1],..Rd[na-1]. [1/sr]
+  2.0195E-02
+  1.9380E-02
+  2.0465E-02
+  1.9762E-02
+  2.0162E-02
+  2.0892E-02
+  2.1555E-02
+  2.1990E-02
+  2.2504E-02
+  2.4275E-02
+  2.4030E-02
+  2.5158E-02
+  2.6242E-02
+  2.7458E-02
+  2.8557E-02
+  3.0479E-02
+  3.2064E-02
+  3.3210E-02
+  3.5522E-02
+  3.7322E-02
+  3.8610E-02
+  4.0431E-02
+  4.2213E-02
+  4.3561E-02
+  4.4449E-02
+  4.4481E-02
+  4.3882E-02
+  4.3065E-02
+  4.0226E-02
+  3.6550E-02
+
