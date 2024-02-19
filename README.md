@@ -15,12 +15,6 @@ field).  CONV can provide a variety of output formats (reflectance,
 transmission, iso-fluence contours, etc.) which are compatible with
 standard graphics applications.
 
-FILE DESCRIPTIONS<br />
-Mcman.txt - Short manual in text format<br />
-Mcman.pdf - Users manual in PDF format<br />
-mcR5pc - PC package<br />
-mcR5unix - Unix package<br />
-
 HISTORY
 ======================================================================
 MCML 1.2 corrected a bug that sometimes led to a sqrt() domain error
