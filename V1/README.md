@@ -15,6 +15,30 @@ field).  CONV can provide a variety of output formats (reflectance,
 transmission, iso-fluence contours, etc.) which are compatible with
 standard graphics applications.
 
+FILE DESCRIPTIONS<br />
+Mcman.txt - Short manual in text format<br />
+Mcman.pdf - Users manual in PDF format<br />
+mcR5pc - PC package<br />
+mcR5unix - Unix package<br />
+
+HISTORY
+======================================================================
+MCML 1.2 corrected a bug that sometimes led to a sqrt() domain error
+due to the finite machine precision.  However, this error has not
+affected previously computed results because if this error happened,
+the program would have stopped execution and yielded no output.
+
+MCML 1.2.1 corrected a bug that sometimes led to memory problems when
+the grid size was too small.
+
+MCML 1.2.2 corrected a bug that was introduced in 1.2.1.
+
+CONV 1.1 corrected a bug of the qtrap() function in the convnr.c file.
+The integration by the original qtrap() sometimes converged incorrectly 
+to zero when the Monte Carlo data was noisy.
+
+======================================================================
+
 Lihong Wang, Ph.D.<br />
 Bren Professor of Medical Engineering and Electrical Engineering<br />
 Affiliated Faculty of Physics and Applied Physics<br />
