@@ -1,45 +1,21 @@
 # MCML
 
-Last update: 3/1/2000
+A Monte Carlo model of light transport in multi-layered tissue (MCML) and the corresponding convolution program (CONV) have been coded in ANSI Standard C. 
+The programs can therefore be executed on a variety of computers. 
+Dynamic data allocation is used for MCML, hence the number of tissue layers and the number of grid elements of the grid system can be varied by users at 
+run time as long as the total amount of memory does not exceed what the system allows. 
+The principle and the implementation details of the model are described elsewhere in publications, and the instructions for using MCML and CONV are presented here.
 
-MCML is a Monte Carlo simulation program for Multi-layered Turbid
-Media with an infinitely narrow photon beam as the light source. The
-simulation is specified by an input text file called, for example,
-"sample.mci", which can be altered by any simple text editor.  The
-output is another text file called, for example, "sample.mco". (The
-names are arbitrary.)
+References related to the software package (citation appreciated):
 
-CONV is a convolution program which uses the MCML output file to
-convolve for photon beams of variable size or shape (Gaussian or flat
-field).  CONV can provide a variety of output formats (reflectance,
-transmission, iso-fluence contours, etc.) which are compatible with
-standard graphics applications.
+1. Wang, L. V.; Jacques, S. L.; Zheng, L.-Q.; "CONV — convolution for responses to a finite diameter photon beam incident on multi-layered tissues," Computer Methods and Programs in Biomedicine 54(3) 141-150 (1997)
 
-Lihong Wang, Ph.D.<br />
-Bren Professor of Medical Engineering and Electrical Engineering<br />
-Affiliated Faculty of Physics and Applied Physics<br />
-Andrew and Peggy Cherng Medical Engineering Leadership Chair<br />
-Executive Officer (aka Department Chair) of Medical Engineering<br />
-Andrew and Peggy Cherng Department of Medical Engineering<br />
-Department of Electrical Engineering<br />
-Division of Engineering and Applied Science<br />
-California Institute of Technology<br />
-1200 E. California Blvd., MC 138-78<br />
-Pasadena, CA 91125<br />
-Office: 205 Keck Labs (via 207)<br />
-Work: 626-395-1959<br />
-Fax: 626-395-1347<br />
-Email: LVW@Caltech.edu<br />
-Web: http://COILab.Caltech.edu<br />
+2. Wang, L. V.; Jacques, S. L.; Zheng, L. Q.; "MCML — Monte Carlo modeling of light transport in multilayered tissues," Computer Methods and Programs in Biomedicine 47(2) 131-146 (1995)
 
+3. Jacques, S. L.; Wang, L. V.; "Monte Carlo modeling of light transport in tissues," Optical Thermal Response of Laser Irradiated Tissue 73–100 (1995)
 
-Steven L. Jacques, Ph.D.<br />
-Professor<br />
-Oregon Medical Laser Center<br />
-Providence/St. Vincent Hospital<br />
-9205 SW Barnes Rd.<br />
-Portland, OR 97225<br />
-Tel:	503-216-4092<br />
-Fax:	503-291-2422<br />
-Email:	sjacques@ece.ogi.edu<br />
-URL:	http://omlc.ogi.edu/staff/jacques.html<br />
+4. Wang, L. V.; Jacques, S. L.; "Optimized radial and angular positions in Monte Carlo modeling," Medical Physics 21(7) 1081-1083 (1994)
+
+Lihong V. Wang, Ph.D.
+
+Steven L. Jacques, Ph.D.
